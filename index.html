@@ -1,10 +1,186 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enigma</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    
+
+<body style="background-image: url('space.gif');background-size: cover;height: 100vh;padding:0;margin:0;"
+    class="montserrat-font">
+    <div class="container">
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <!-- title -->
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4  lh-1 mb-3 text-light">Enigma</h1>
+                    <p class="col-lg-10 fs-4"></p>
+                </div>
+
+                <!-- Form -->
+                <div class="col-md-10 mx-auto col-lg-5 " style="/* From https://css.glass */
+                background: rgba(255, 255, 255, 0.08);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(6.8px);
+                -webkit-backdrop-filter: blur(6.8px);
+                border: 1px solid rgba(255, 255, 255, 0.12);">
+                    <form class="p-4 p-md-5  rounded-3 " action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="dd75118c-5d66-4604-a9c5-cdf7f0d9457e">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="form-floating mb-3 ">
+                            <input type="email" class="form-control bg-transparent border-0 text-light"
+                                id="floatingInput" placeholder="name@example.com" name="email" required>
+                            <label for="floatingInput" class="text-light">Mail</label>
+                            <div data-lastpass-icon-root=""
+                                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <div data-lastpass-icon-root=""
+                                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                            </div>
+                        </div>
+                        <button class="w-100 btn btn-lg  text-light " type="submit" style="background: rgb(72,11,101);
+background: radial-gradient(circle, rgba(72,11,101,1) 0%, rgba(0,0,0,1) 100%);">Join Waitlist</button>
+                        <hr class="my-4">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-light"><strong>Enigma</strong> by <a
+                        class="text-decoration-none text-light" href="mailto:elopezrfis@gmail.com">Erick L.</a></span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex wrapper">
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </li>
+                <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </li>
+                <li class="icon whatsapp">
+                    <span class="tooltip">Whatsapp</span>
+                    <span><i class="fab fa-whatsapp"></i></span>
+                </li>
+
+            </ul>
+
+
+        </footer>
+    </div>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <style>
+        .montserrat-font {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        .wrapper {
+            display: inline-flex;
+            list-style: none;
+        }
+
+        .wrapper .icon {
+            position: relative;
+            background: #cacabc;
+            border-radius: 50%;
+            padding: 15px;
+            margin: 10px;
+            width: 30px;
+            height: 30px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .tooltip {
+            position: absolute;
+            top: 0;
+            font-size: 14px;
+            background: #ffffff;
+            color: #ffffff;
+            padding: 5px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .tooltip::before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background: #ffffff;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .icon:hover .tooltip {
+            top: -45px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip {
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .wrapper .facebook:hover,
+        .wrapper .facebook:hover .tooltip,
+        .wrapper .facebook:hover .tooltip::before {
+            background: #1877f2;
+            color: #ffffff;
+        }
+
+        .wrapper .whatsapp:hover,
+        .wrapper .whatsapp:hover .tooltip,
+        .wrapper .whatsapp:hover .tooltip::before {
+            background: #3e8834;
+            color: #ffffff;
+        }
+
+        .wrapper .instagram:hover,
+        .wrapper .instagram:hover .tooltip,
+        .wrapper .instagram:hover .tooltip::before {
+            background: #e4405f;
+            color: #ffffff;
+        }
+    </style>
 </body>
+
 </html>
