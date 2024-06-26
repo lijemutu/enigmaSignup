@@ -15,28 +15,34 @@
 
 <body style="background-image: url('space.gif');background-size: cover;height: 100vh;padding:0;margin:0;"
     class="montserrat-font">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.7.6/build/spline-viewer.js"></script>
+                    <!-- <spline-viewer class="fixed-top" style="z-index: -1;" url="https://prod.spline.design/sWw8e1xxE3VrNs2X/scene.splinecode"></spline-viewer> -->
+                    <spline-viewer class="fixed-top" style="z-index: -1;" url="https://prod.spline.design/leSYqUV6VZtxvYbr/scene.splinecode"></spline-viewer>
     <div class="container">
         <div class="container col-xl-10 col-xxl-8 px-4 py-5">
             <div class="row align-items-center g-lg-5 py-5">
                 <!-- title -->
-                <div class="col-lg-7 text-center text-lg-start">
-                    <h1 class="display-4  lh-1 mb-3 text-light">Enigma</h1>
+                <div class="col text-center ">
+                    <h1 class="display-1  lh-1 mb-3 text-light" style="font-size: 12vw;">Enigma</h1>
                     <p class="col-lg-10 fs-4"></p>
                 </div>
-
+                <div>
+                    
+                </div>
+                
                 <!-- Form -->
-                <div class="col-md-10 mx-auto col-lg-5 " style="/* From https://css.glass */
-                background: rgba(255, 255, 255, 0.08);
+                <div class="col-md-10 mx-auto col-lg-7" style="/* From https://css.glass */
+                background: rgba(255, 255, 255, 0.04);
                 border-radius: 16px;
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(6.8px);
                 -webkit-backdrop-filter: blur(6.8px);
-                border: 1px solid rgba(255, 255, 255, 0.12);">
+                border: 1px solid rgba(255, 255, 255, 0.09);">
                     <form class="p-4 p-md-5  rounded-3 " action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="dd75118c-5d66-4604-a9c5-cdf7f0d9457e">
                         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                        <div class="form-floating mb-3 ">
+                        <div class="form-floating mb-1 ">
                             <input type="email" class="form-control bg-transparent border-0 text-light"
                                 id="floatingInput" placeholder="name@example.com" name="email" required>
                             <label for="floatingInput" class="text-light">Mail</label>
@@ -44,21 +50,20 @@
                                 style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
                             </div>
                         </div>
-                        <div class="form-floating mb-3">
+                        <div class="form-floating mb-2">
                             <div data-lastpass-icon-root=""
                                 style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
                             </div>
                         </div>
                         <button class="w-100 btn btn-lg  text-light " type="submit" style="background: rgb(72,11,101);
 background: radial-gradient(circle, rgba(72,11,101,1) 0%, rgba(0,0,0,1) 100%);">Join Waitlist</button>
-                        <hr class="my-4">
                     </form>
                 </div>
             </div>
         </div>
 
         <!-- footer -->
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top  fixed-bottom" style="border-top-color: rgb(138, 127, 150) !important;">
             <div class="col-md-4 d-flex align-items-center">
                 <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                     <svg class="bi" width="30" height="24">
@@ -67,6 +72,7 @@ background: radial-gradient(circle, rgba(72,11,101,1) 0%, rgba(0,0,0,1) 100%);">
                 </a>
                 <span class="mb-3 mb-md-0 text-light"><strong>Enigma</strong> by <a
                         class="text-decoration-none text-light" href="mailto:elopezrfis@gmail.com">Erick L.</a></span>
+                        
             </div>
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex wrapper">
